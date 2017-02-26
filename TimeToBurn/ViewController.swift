@@ -19,10 +19,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         didSet {
             skinTypeLabel.text = "Skin:" + self.skinType
             Utilities().setSkinType(value: skinType)
+            getWeatherData()
         }
     }
     
     var uvIndex = 8
+    var burnTime: Double = 10
     
     let locationManager = CLLocationManager()
     var coords = CLLocationCoordinate2D(latitude: 40, longitude: 40)
@@ -76,7 +78,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func getLocation() {
         if let loc = locationManager.location?.coordinate {
             coords = loc
-            getWeatherData()
         }
     }
     
@@ -118,7 +119,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             // success
             self.activityIndicator.stopAnimating()
+            self.calculateBurnTime()
+            print("burn time: \(self.burnTime)")
         }
+    }
+    
+    func calculateBurnTime() {
+        var minToBurn: Double = 10
+        
+        switch skinType {
+        case SkinType().type1:
+            minToBurn = BurnTime().burnType1
+        case SkinType().type2:
+            minToBurn = BurnTime().burnType2
+        case SkinType().type3:
+            minToBurn = BurnTime().burnType3
+        case SkinType().type4:
+            minToBurn = BurnTime().burnType4
+        case SkinType().type5:
+            minToBurn = BurnTime().burnType5
+        case SkinType().type6:
+            minToBurn = BurnTime().burnType6
+        default:
+            minToBurn = BurnTime().burnType1
+        }
+        
+        burnTime = minToBurn / Double(self.uvIndex)
     }
 
 }
