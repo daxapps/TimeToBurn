@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import Alamofire
+import UserNotifications
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -39,6 +40,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         skinTypeLabel.text = "Skin: " + skinType
     }
 
+    @IBAction func remindMeBtnTapped(_ sender: Any) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                let content = UNMutableNotificationContent()
+                content.title = NSString.localizedUserNotificationString(forKey: "Time is Up!", arguments: nil)
+                content.body = NSString.localizedUserNotificationString(forKey: "You are beginning to burn! Please put in sunblock, clothing or get under shelter!", arguments: nil)
+                content.sound = UNNotificationSound.default()
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                let request = UNNotificationRequest(identifier: "willburn", content: content, trigger: trigger)
+                
+                center.add(request)
+            }
+        }
+    }
+    
     @IBAction func changeSkinClicked(_ sender: UIButton) {
         let alert = UIAlertController(title: "Skin Type", message: "Please Choose Skin Type", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: SkinType().type1, style: .default, handler: { (action) in

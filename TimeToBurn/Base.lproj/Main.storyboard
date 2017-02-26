@@ -53,13 +53,13 @@
                                 <color key="color" red="0.99936896559999999" green="0.74338763949999997" blue="0.53373223540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-EK-ufp">
-                                <rect key="frame" x="104" y="225" width="112" height="118.5"/>
+                                <rect key="frame" x="104" y="225.5" width="112" height="118.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="99"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes until you burn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cML-xj-mq6">
-                                <rect key="frame" x="51" y="122" width="219" height="26"/>
+                                <rect key="frame" x="51" y="122.5" width="219" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="Szd-pg-Ef5"/>
                                 </constraints>
@@ -67,12 +67,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msN-8A-VDU">
+                                <rect key="frame" x="73" y="358" width="175" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <state key="normal" title="Set Reminder">
+                                    <color key="titleColor" red="0.94848805670000003" green="0.28875610229999998" blue="0.0030317916529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="remindMeBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipR-56-1Ni"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="msN-8A-VDU" firstAttribute="top" secondItem="Yf0-EK-ufp" secondAttribute="bottom" constant="14" id="6dJ-UN-xTm"/>
                             <constraint firstItem="cML-xj-mq6" firstAttribute="centerX" secondItem="c4P-4n-Rod" secondAttribute="centerX" id="A8w-hl-PwB"/>
                             <constraint firstItem="Yf0-EK-ufp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U8o-Wm-wKD"/>
                             <constraint firstItem="Yf0-EK-ufp" firstAttribute="top" secondItem="cML-xj-mq6" secondAttribute="bottom" constant="77" id="WAZ-UA-59Q"/>
+                            <constraint firstItem="msN-8A-VDU" firstAttribute="centerX" secondItem="c4P-4n-Rod" secondAttribute="centerX" id="WtH-DC-iWd"/>
                             <constraint firstItem="c4P-4n-Rod" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bMm-u5-YqD"/>
                             <constraint firstItem="c4P-4n-Rod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6P-9q-4Dk"/>
                             <constraint firstItem="cML-xj-mq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="nbf-zT-8ti"/>
