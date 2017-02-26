@@ -14,7 +14,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var skinTypeLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    @IBOutlet weak var minToBurnLbl: UILabel!
     var skinType = SkinType().type1 {
         didSet {
             skinTypeLabel.text = "Skin:" + self.skinType
@@ -121,6 +121,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.activityIndicator.stopAnimating()
             self.calculateBurnTime()
             print("burn time: \(self.burnTime)")
+            self.minToBurnLbl.text = String(self.burnTime) 
         }
     }
     

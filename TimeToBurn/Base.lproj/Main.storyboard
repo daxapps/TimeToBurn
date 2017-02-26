@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,39 +22,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cts-Zi-W7j">
-                                <rect key="frame" x="85" y="28" width="219" height="26"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j48-xS-Pxq">
+                                <rect key="frame" x="24" y="24" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-kK-Ha0">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XoO-6B-wz5"/>
+                                            <constraint firstAttribute="width" constant="53" id="df8-jb-2o7"/>
+                                        </constraints>
+                                        <state key="normal" title="Change"/>
+                                        <connections>
+                                            <action selector="changeSkinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSV-f5-6Dr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Skin Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cts-Zi-W7j">
+                                        <rect key="frame" x="57" y="0.0" width="219" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="219" id="CE3-l8-fMn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-4n-Rod">
+                                <rect key="frame" x="142" y="266" width="37" height="37"/>
+                                <color key="color" red="0.99936896559999999" green="0.74338763949999997" blue="0.53373223540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-EK-ufp">
+                                <rect key="frame" x="104" y="225" width="112" height="118.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="99"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes until you burn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cML-xj-mq6">
+                                <rect key="frame" x="51" y="122" width="219" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Szd-pg-Ef5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-kK-Ha0">
-                                <rect key="frame" x="24" y="24" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change"/>
-                                <connections>
-                                    <action selector="changeSkinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSV-f5-6Dr"/>
-                                </connections>
-                            </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-4n-Rod">
-                                <rect key="frame" x="142" y="266" width="37" height="37"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cML-xj-mq6" firstAttribute="centerX" secondItem="c4P-4n-Rod" secondAttribute="centerX" id="A8w-hl-PwB"/>
+                            <constraint firstItem="Yf0-EK-ufp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U8o-Wm-wKD"/>
+                            <constraint firstItem="Yf0-EK-ufp" firstAttribute="top" secondItem="cML-xj-mq6" secondAttribute="bottom" constant="77" id="WAZ-UA-59Q"/>
                             <constraint firstItem="c4P-4n-Rod" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bMm-u5-YqD"/>
                             <constraint firstItem="c4P-4n-Rod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6P-9q-4Dk"/>
+                            <constraint firstItem="cML-xj-mq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="nbf-zT-8ti"/>
+                            <constraint firstItem="Yf0-EK-ufp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qt6-oq-M4m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="c4P-4n-Rod" id="8cm-5W-tDb"/>
+                        <outlet property="minToBurnLbl" destination="Yf0-EK-ufp" id="NCY-vz-adO"/>
                         <outlet property="skinTypeLabel" destination="Cts-Zi-W7j" id="YVv-Oi-9YS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.625" y="135.21126760563379"/>
+            <point key="canvasLocation" x="-176" y="126"/>
         </scene>
     </scenes>
 </document>
