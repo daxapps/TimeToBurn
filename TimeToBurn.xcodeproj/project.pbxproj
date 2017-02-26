@@ -14,6 +14,7 @@
 		E0088A7E1E61F82000BE4EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0088A7D1E61F82000BE4EA6 /* Assets.xcassets */; };
 		E0088A811E61F82000BE4EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0088A7F1E61F82000BE4EA6 /* LaunchScreen.storyboard */; };
 		E0088A8C1E61F82000BE4EA6 /* TimeToBurnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0088A8B1E61F82000BE4EA6 /* TimeToBurnTests.swift */; };
+		E0529F951E6332DD004C3C4F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0529F941E6332DD004C3C4F /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E0088A871E61F82000BE4EA6 /* TimeToBurnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeToBurnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0088A8B1E61F82000BE4EA6 /* TimeToBurnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToBurnTests.swift; sourceTree = "<group>"; };
 		E0088A8D1E61F82000BE4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0529F941E6332DD004C3C4F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E0088A721E61F82000BE4EA6 /* TimeToBurn */ = {
 			isa = PBXGroup;
 			children = (
+				E0088A961E61FD9100BE4EA6 /* Resources */,
 				E0088A731E61F82000BE4EA6 /* AppDelegate.swift */,
 				E0088A751E61F82000BE4EA6 /* ViewController.swift */,
 				E0088A771E61F82000BE4EA6 /* Main.storyboard */,
@@ -86,6 +89,7 @@
 				E0088A7F1E61F82000BE4EA6 /* LaunchScreen.storyboard */,
 				E0088A821E61F82000BE4EA6 /* Info.plist */,
 				E0088A7A1E61F82000BE4EA6 /* TimeToBurn.xcdatamodeld */,
+				E0529F941E6332DD004C3C4F /* Utilities.swift */,
 			);
 			path = TimeToBurn;
 			sourceTree = "<group>";
@@ -97,6 +101,13 @@
 				E0088A8D1E61F82000BE4EA6 /* Info.plist */,
 			);
 			path = TimeToBurnTests;
+			sourceTree = "<group>";
+		};
+		E0088A961E61FD9100BE4EA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +217,7 @@
 			files = (
 				E0088A761E61F82000BE4EA6 /* ViewController.swift in Sources */,
 				E0088A7C1E61F82000BE4EA6 /* TimeToBurn.xcdatamodeld in Sources */,
+				E0529F951E6332DD004C3C4F /* Utilities.swift in Sources */,
 				E0088A741E61F82000BE4EA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,7 @@
 				E0088A921E61F82000BE4EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0088A931E61F82000BE4EA6 /* Build configuration list for PBXNativeTarget "TimeToBurnTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				E0088A951E61F82000BE4EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

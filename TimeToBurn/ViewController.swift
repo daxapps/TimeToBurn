@@ -11,6 +11,15 @@ import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var skinTypeLabel: UILabel!
+    
+    var skinType = SkinType().type1 {
+        didSet {
+            skinTypeLabel.text = "Skin:" + self.skinType
+            Utilities().setSkinType(value: skinType)
+        }
+    }
+    
     let locationManager = CLLocationManager()
     var coords = CLLocationCoordinate2D(latitude: 40, longitude: 40)
     
@@ -20,12 +29,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        skinType = Utilities().getSkinType()
+        skinTypeLabel.text = "Skin: " + skinType
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func changeSkinClicked(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Skin Type", message: "Please Choose Skin Type", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: SkinType().type1, style: .default, handler: { (action) in
+            self.skinType = SkinType().type1
+        }))
+        alert.addAction(UIAlertAction(title: SkinType().type2, style: .default, handler: { (action) in
+            self.skinType = SkinType().type2
+        }))
+        alert.addAction(UIAlertAction(title: SkinType().type3, style: .default, handler: { (action) in
+            self.skinType = SkinType().type3
+        }))
+        alert.addAction(UIAlertAction(title: SkinType().type4, style: .default, handler: { (action) in
+            self.skinType = SkinType().type4
+        }))
+        alert.addAction(UIAlertAction(title: SkinType().type5, style: .default, handler: { (action) in
+            self.skinType = SkinType().type5
+        }))
+        alert.addAction(UIAlertAction(title: SkinType().type6, style: .default, handler: { (action) in
+            self.skinType = SkinType().type6
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
+
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         print("DAX: location changed")
