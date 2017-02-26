@@ -16,6 +16,7 @@
 		E0088A811E61F82000BE4EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0088A7F1E61F82000BE4EA6 /* LaunchScreen.storyboard */; };
 		E0088A8C1E61F82000BE4EA6 /* TimeToBurnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0088A8B1E61F82000BE4EA6 /* TimeToBurnTests.swift */; };
 		E0529F951E6332DD004C3C4F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0529F941E6332DD004C3C4F /* Utilities.swift */; };
+		E0C316441E634949007ABF1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C316431E634949007ABF1D /* Constants.swift */; };
 		E8DF764F0B3D53966DE412FC /* Pods_TimeToBurn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8999AFCFB3060A110D65C1 /* Pods_TimeToBurn.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		E0088A8B1E61F82000BE4EA6 /* TimeToBurnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToBurnTests.swift; sourceTree = "<group>"; };
 		E0088A8D1E61F82000BE4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0529F941E6332DD004C3C4F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E0C316431E634949007ABF1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				E0088A821E61F82000BE4EA6 /* Info.plist */,
 				E0088A7A1E61F82000BE4EA6 /* TimeToBurn.xcdatamodeld */,
 				E0529F941E6332DD004C3C4F /* Utilities.swift */,
+				E0C316431E634949007ABF1D /* Constants.swift */,
 			);
 			path = TimeToBurn;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C316441E634949007ABF1D /* Constants.swift in Sources */,
 				E0088A761E61F82000BE4EA6 /* ViewController.swift in Sources */,
 				E0088A7C1E61F82000BE4EA6 /* TimeToBurn.xcdatamodeld in Sources */,
 				E0529F951E6332DD004C3C4F /* Utilities.swift in Sources */,

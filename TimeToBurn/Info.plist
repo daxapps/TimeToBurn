@@ -41,7 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationUsageDescription</key>
-	<string>Time to Burn needs your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Time to Burn needs your location to work.</string>
 </dict>
 </plist>
