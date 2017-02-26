@@ -36,10 +36,18 @@
                                     <action selector="changeSkinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSV-f5-6Dr"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-4n-Rod">
+                                <rect key="frame" x="142" y="266" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c4P-4n-Rod" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bMm-u5-YqD"/>
+                            <constraint firstItem="c4P-4n-Rod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6P-9q-4Dk"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="c4P-4n-Rod" id="8cm-5W-tDb"/>
                         <outlet property="skinTypeLabel" destination="Cts-Zi-W7j" id="YVv-Oi-9YS"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,7 @@ import Alamofire
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var skinTypeLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var skinType = SkinType().type1 {
         didSet {
@@ -95,13 +96,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             if let uvI = Int(uv) {
                                 self.uvIndex = uvI
                                 print("UV Index = \(uvI)")
+                                self.updateUI(dataSuccess: true)
+                                return
                             }
                         }
                     }
                 }
             }
+            
+            self.updateUI(dataSuccess: false)
         }
         
+    }
+    
+    func updateUI(dataSuccess: Bool) {
+        DispatchQueue.main.async {
+            // failed
+            if !dataSuccess {
+                self.getWeatherData()
+                return
+            }
+            // success
+            self.activityIndicator.stopAnimating()
+        }
     }
 
 }
