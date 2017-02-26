@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65AEB68090FCCFE837EC93D3 /* Pods_TimeToBurnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A320323A911909F3FBE91B4 /* Pods_TimeToBurnTests.framework */; };
 		E0088A741E61F82000BE4EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0088A731E61F82000BE4EA6 /* AppDelegate.swift */; };
 		E0088A761E61F82000BE4EA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0088A751E61F82000BE4EA6 /* ViewController.swift */; };
 		E0088A791E61F82000BE4EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0088A771E61F82000BE4EA6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		E0088A811E61F82000BE4EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0088A7F1E61F82000BE4EA6 /* LaunchScreen.storyboard */; };
 		E0088A8C1E61F82000BE4EA6 /* TimeToBurnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0088A8B1E61F82000BE4EA6 /* TimeToBurnTests.swift */; };
 		E0529F951E6332DD004C3C4F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0529F941E6332DD004C3C4F /* Utilities.swift */; };
+		E8DF764F0B3D53966DE412FC /* Pods_TimeToBurn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8999AFCFB3060A110D65C1 /* Pods_TimeToBurn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31A54CB38C9C8B0F6DAE4BBA /* Pods-TimeToBurnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeToBurnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeToBurnTests/Pods-TimeToBurnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A320323A911909F3FBE91B4 /* Pods_TimeToBurnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeToBurnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687DA30A9BC9D0AD53F04ECC /* Pods-TimeToBurnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeToBurnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeToBurnTests/Pods-TimeToBurnTests.release.xcconfig"; sourceTree = "<group>"; };
+		796D98866918244E88C19E3D /* Pods-TimeToBurn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeToBurn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeToBurn/Pods-TimeToBurn.release.xcconfig"; sourceTree = "<group>"; };
+		8F8999AFCFB3060A110D65C1 /* Pods_TimeToBurn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeToBurn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1049CD611643E6EC2A7019C /* Pods-TimeToBurn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeToBurn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeToBurn/Pods-TimeToBurn.debug.xcconfig"; sourceTree = "<group>"; };
 		E0088A701E61F82000BE4EA6 /* TimeToBurn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeToBurn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0088A731E61F82000BE4EA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0088A751E61F82000BE4EA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF764F0B3D53966DE412FC /* Pods_TimeToBurn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AEB68090FCCFE837EC93D3 /* Pods_TimeToBurnTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6049B13994ACE11A91F3AA67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1049CD611643E6EC2A7019C /* Pods-TimeToBurn.debug.xcconfig */,
+				796D98866918244E88C19E3D /* Pods-TimeToBurn.release.xcconfig */,
+				31A54CB38C9C8B0F6DAE4BBA /* Pods-TimeToBurnTests.debug.xcconfig */,
+				687DA30A9BC9D0AD53F04ECC /* Pods-TimeToBurnTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E0088A671E61F82000BE4EA6 = {
 			isa = PBXGroup;
 			children = (
 				E0088A721E61F82000BE4EA6 /* TimeToBurn */,
 				E0088A8A1E61F82000BE4EA6 /* TimeToBurnTests */,
 				E0088A711E61F82000BE4EA6 /* Products */,
+				6049B13994ACE11A91F3AA67 /* Pods */,
+				ED57A3DB4672D41639439873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +133,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		ED57A3DB4672D41639439873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F8999AFCFB3060A110D65C1 /* Pods_TimeToBurn.framework */,
+				5A320323A911909F3FBE91B4 /* Pods_TimeToBurnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0088A901E61F82000BE4EA6 /* Build configuration list for PBXNativeTarget "TimeToBurn" */;
 			buildPhases = (
+				CDE4CCC09685D0B05F318A84 /* [CP] Check Pods Manifest.lock */,
 				E0088A6C1E61F82000BE4EA6 /* Sources */,
 				E0088A6D1E61F82000BE4EA6 /* Frameworks */,
 				E0088A6E1E61F82000BE4EA6 /* Resources */,
+				CE2C5C01DF0E7459567CC3FD /* [CP] Embed Pods Frameworks */,
+				8DD02CC930DAB64B87CF3EEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0088A931E61F82000BE4EA6 /* Build configuration list for PBXNativeTarget "TimeToBurnTests" */;
 			buildPhases = (
+				0E727FF9E426AEA41CF184EF /* [CP] Check Pods Manifest.lock */,
 				E0088A831E61F82000BE4EA6 /* Sources */,
 				E0088A841E61F82000BE4EA6 /* Frameworks */,
 				E0088A851E61F82000BE4EA6 /* Resources */,
+				DFD1BB8685FA20E010B3D7F1 /* [CP] Embed Pods Frameworks */,
+				FDBF55DD9B302E255A08FC58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +247,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E727FF9E426AEA41CF184EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DD02CC930DAB64B87CF3EEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeToBurn/Pods-TimeToBurn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE4CCC09685D0B05F318A84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2C5C01DF0E7459567CC3FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeToBurn/Pods-TimeToBurn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD1BB8685FA20E010B3D7F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeToBurnTests/Pods-TimeToBurnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBF55DD9B302E255A08FC58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeToBurnTests/Pods-TimeToBurnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0088A6C1E61F82000BE4EA6 /* Sources */ = {
@@ -355,6 +486,7 @@
 		};
 		E0088A911E61F82000BE4EA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1049CD611643E6EC2A7019C /* Pods-TimeToBurn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
@@ -368,6 +500,7 @@
 		};
 		E0088A921E61F82000BE4EA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796D98866918244E88C19E3D /* Pods-TimeToBurn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
@@ -381,6 +514,7 @@
 		};
 		E0088A941E61F82000BE4EA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A54CB38C9C8B0F6DAE4BBA /* Pods-TimeToBurnTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -396,6 +530,7 @@
 		};
 		E0088A951E61F82000BE4EA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687DA30A9BC9D0AD53F04ECC /* Pods-TimeToBurnTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
