@@ -21,6 +21,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    var uvIndex = 8
+    
     let locationManager = CLLocationManager()
     var coords = CLLocationCoordinate2D(latitude: 40, longitude: 40)
     
@@ -84,8 +86,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         Alamofire.request(url).responseJSON { response in
             print("alamo \(response.result)")
             
-            if let JSON = response.result.value {
+            if let JSON = response.result.value as? [String: Any] {
                 print("JSON \(JSON)")
+                
+                if let data = JSON["data"] as? Dictionary<String, AnyObject> {
+                    if let weather = data["weather"] as? [Dictionary<String, AnyObject>] {
+                        if let uv = weather[0]["uvIndex"] as? String {
+                            if let uvI = Int(uv) {
+                                self.uvIndex = uvI
+                                print("UV Index = \(uvI)")
+                            }
+                        }
+                    }
+                }
             }
         }
         
